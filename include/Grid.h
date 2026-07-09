@@ -1,3 +1,6 @@
+#ifndef GRID_H
+#define GRID_H
+
 #include "Cell.h"
 #include <vector>
 
@@ -34,3 +37,5 @@ public:
     void setTerrainCost(int row, int col, int cost);
     void generateMap(double obstaclePercentage, int maxTerrainCost);
 };
+
+#endif
