@@ -1,7 +1,6 @@
 #include "Cell.h"
 #include <vector>
 
-
 class Grid {
 private:
     int rows;
