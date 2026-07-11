@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/Grid.cpp.o CMakeFiles/app.dir/src/Dijkstra.cpp.o CMakeFiles/app.dir/src/AStar.cpp.o CMakeFiles/app.dir/src/Display.cpp.o -o app

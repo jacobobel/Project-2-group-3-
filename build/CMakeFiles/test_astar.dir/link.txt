@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_astar.dir/tests/test2.cpp.o CMakeFiles/test_astar.dir/src/Grid.cpp.o CMakeFiles/test_astar.dir/src/AStar.cpp.o -o test_astar
