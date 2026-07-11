@@ -48,6 +48,7 @@ PathResult AStar::findPath(const Grid& grid) {
     auto begin = chrono::high_resolution_clock::now();
 
     PathResult result;
+    result.algorithmName = "A*";
 
     int start = grid.getStartIndex();
     int goal = grid.getGoalIndex();
@@ -72,10 +73,11 @@ PathResult AStar::findPath(const Grid& grid) {
 
         visited[current] = true;
         result.nodesExplored++;
+        result.exploredCells.push_back(current);
 
         if (current == goal) {
-            result.found = true;
-            result.totalCost = cost[goal];
+            result.pathFound = true;
+            result.pathCost = cost[goal];
             result.path = buildPath(parent, start, goal);
             break;
         }
